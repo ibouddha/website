@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+.yt{
+    font-family: "Yellowtail", cursive;
+    color: #68A47F;
+}
+
+.container {
+    /* margin: 5vw; */
+}
+
+.nav {
+    display: flex;
+}
+
+.logo {
+    /* background-color: black; */
+    display: flex;
+}
+
+.logo-mini {
+    display: none;
+}
+
+.menuburger{
+    display: none;
+    width: 10vw;
+    height: 10vw;
+}
+
+.banner{
+    width: 98vw;
+    height: 88vh;
+    background-image: url("../images/Banner.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.discover{
+    width: 30vw;
+    height: 20vw;
+    margin-left: 15vw;
+    font-weight: 100;
+    border: 1px solid #222;
+}
+
+.title{
+    font-size: 3vw;
+    font-weight: bold;
+
+}
+
+.menu {
+    width: 45vw;
+    height: 10vh;
+    margin-left: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-left: 2vw;
+    width: 10vw;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: large;
+    border: 1px solid #ccc;
+    color: #000000;
+}
+
+.menu ul li a:hover {
+    border-radius: 10px 10px;
+}
+
+@media screen and (min-width:768px) and (max-width:1164px) {
+   
+    .menu{
+        margin-left: auto;
+        border: 1px solid #333;
+        width:  50%;
+    }
+
+    .menu ul{
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        margin-top: 3vh;
+    }
+
+    .logo-maxi img{
+        width: auto;
+        height: auto;
+    }
+
+    .menu ul li {
+        width: 10vw;
+        font-size: medium;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        font-size: medium;
+        border: 1px solid #ccc;
+        color: #000000;
+    }
+
+    .discover{
+        width: 30vw;
+        height: 20vw;
+        margin-left: 20vw;
+        border: 1px solid #222;
+    }
+
+    .title{
+        font-size: 3vw;
+        font-weight: bold;
+        line-height: 9vw
+    }
+}
+
+@media screen and (max-width:768px) {
+    .menu{
+        display: none;
+    }
+
+    .logo {
+        display: block;
+        width: 90vw;
+        flex-direction: column;
+    }
+
+    .logo-mini{
+        display: inline;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .logo-maxi {
+        display: none;
+        background-color: none;
+    }
+
+    .menuburger {
+        display: inline-block;
+        width: auto;
+        height: 10vh;
+        float: right;
+    }
+
+    .discover{
+        width: 30vw;
+        height: 20vw;
+        margin-left: 35vw;
+        border: 1px solid #222;
+    }
+}
